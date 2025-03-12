@@ -1,0 +1,23 @@
+.container{
+    width:100vw;
+    margin: 0;
+    padding: 0;
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 2.2fr;
+    grid-template-areas:
+    "topbar topbar topbar"
+    "side_menu content content"
+    "footer footer footer"
+
+
+}
+
+.header{grid-area: topbar;}
+.side_menu {grid-area: side_menu;}
+.content {grid-area: content;}
+.footer{grid-area: footer;}
+
+.side_menu, .content {
+    margin-top:20vh;
+}

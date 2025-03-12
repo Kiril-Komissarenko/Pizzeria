@@ -1,50 +1,39 @@
-.header img{
-	margin-left: 20px;
-}
+/*header and footer*/
 
-.header_buttons{
-	font-weight:bold;
-	font-size: 20px;
-	margin-left: 10px;
-	padding: 10px 10px;
-	margin-top: 20px;
-}
-.header_buttons a{
-	margin-right: 10px;
-}
+/*Basic*/
 
-.middle-section{
-    margin-top:25px;
-    margin-bottom:100px;
-}
-.middle-section h3{
-    text-align:center;
-}
-.middle-section a{
+html, body {
+   margin: 0;
+   padding: 0;
+ }
 
-    position: absolute;
-    left: 43%;
-    border: black solid 3px;
-    background-color: red;
-    padding: 12px 48px;
-    border-radius:20px;
-    font-weight:bold;
-}
-.middle-section a:active,
-.middle-section a:link,
-.middle-section a:visited,
-.middle-section a:hover{
-    text-decoration:none;
-    color: black;
-}
-.middle-section a:active{
-    box-shadow: none;
-    border: none;
-}
+ /*basic end*/
 
-.middle-section a:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
+ /*Header*/
+
+ .header{
+     background-color: white;
+     z-index: 1;
+     position:fixed;
+     width: 100%;
+     box-shadow: 5px 10px 25px;
+ }
+
+ .header img{
+ 	margin-left: 20px;
+
+ }
+
+ .header_buttons{
+ 	font-weight:bold;
+ 	font-size: 20px;
+ 	margin-left: 10px;
+ 	padding: 10px 10px;
+ 	margin-top: 20px;
+ 	justify-content: center;
+ 	margin-bottom: 15px;
+ }
+
 .header_buttons a:active,
  .header_buttons a:visited,
  .header_buttons a:link{
@@ -57,122 +46,167 @@
 	text-underline-offset: 30px;
 }
 
-.sliding-img{
-margin-top:20px;
-}
+ .promocode{
+     margin-top: -4px;
+     float:right;
+     margin-right: 2vw;
+     border-bottom-left-radius:0.5rem;
+     border-top-left-radius:0.5rem;
+     border-bottom-right-radius:0.5rem;
+     border-top-right-radius:0.5rem;
+     box-shadow: rgba(98, 98, 98, 0.75) 3px 3px 6px -1px
+ }
 
-.flex-text{
-display:flex;
-flex-direction:row;
-align-items: center;
-justify-content: center;
-}
+ #promo:focus{
+     border: 2px solid rgb(	0, 140, 69);
+     outline: none;
+ }
 
-.flex-text a{
-	margin-right: 10px;
-}
+ #promo{
+     height: 30px;
+     border-bottom-left-radius:0.5rem;
+     border-top-left-radius:0.5rem;
+     border: 2px solid black;
+     border-right:none;
+     font-weight: 900;
+     font-size:15px;
 
-.flex-text a:link{
-	color:gray;
-	text-decoration:none;
-}
+ }
 
-.flex-text a:active {
-	color:gray;
-    text-decoration: none;
-}
+ #promo_button{
+     height:36px;
+     border-bottom-right-radius:0.5rem;
+     border-top-right-radius:0.5rem;
+     border: 2px solid rgb(	0, 140, 69);
+     border-left: none;
+     margin-left: 0;
+     background-color: rgb(	0, 140, 69);
+     color: white;
+     font-weight: 900;
+     font-size:15px;
 
-.flex-text a:visited{
-	color:gray;
-    text-decoration: none;
-}
+ }
 
-.flex-text a:hover{
-    text-decoration: underline solid 1px gray;
-    text-underline-offset: 2px;
-}
+ #promo_button:hover , #promo:hover{
+     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 
-.flex-text > div{
-    width: 300px;
-    margin 30px;
-    text-align:center;
-}
+ }
 
-.container{
-    padding: 2rem;
-}
+ #promo_button:active{
+     color:black;
+     background-color: #0C681B;
+     border: 2px solid #0C681B;
+ }
 
-.slider-wrapper{
-    position:relative;
-    position: 48rem;
-    margin: 0 auto;
+ .header_buttons a{
+ 	margin-right: 10px;
+
+ }
+
+ /*Three bar menu page code starts*/
+
+ .menu{
+   margin:0.5vw;
+   margin-right:12px;
+   float: right;
+   display: inline-block;
+   cursor: pointer;
+ }
+
+ .bar1, .bar2, .bar3 {
+   width: 35px;
+   height: 5px;
+   background-color: #333;
+   margin: 6px 0;
+   transition: 0.4s;
+ }
+
+ .change .bar1 {
+   transform: translate(0, 11px) rotate(-45deg);
+
+ }
+
+ .change .bar2 {
+ opacity: 0;
+
+ }
+
+ .change .bar3 {
+   transform: translate(0, -11px) rotate(45deg);
+
+ }
+
+ /*Three bar menu page code ends*/
+
+ /*Header end*/
+
+ /*Footer*/
+
+.footer{
+    box-shadow:5px 10px 25px;
+}
+.footer hr{
+    margin: 0;
+    padding:0;
+    border: none;
+
 
 }
+ .flex-text{
+ display:flex;
+ flex-direction:row;
+ align-items: center;
+ justify-content: center;
+ }
 
-.slider {
-    display: flex;
-    aspect-ratio: 16/9;
-    overflow-x:auto;
-    scroll-snap-type: x mandatory;
-    scroll-behaviour: smooth;
-    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-    border-radius:0.5rem;
-    -ms-overflow-style:none;
-    scrollbar-width: none;
-}
-.slider::-webkit-scrollbar{
-    display: none;
-}
-.slider img{
-    flex: 1 0 100%;
-    scroll-snap-align: start;
-    object-fit: cover;
-}
+ .flex-text a{
+ 	margin-right: 10px;
+    font-weight: 300;
+    font-family: sans-serif;
+ }
 
-.slider-nav{
-    display:flex;
-    column-gap:1rem;
-    position: absolute;
-    bottom: 1.25rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index:1;
-}
+ .flex-text a:link{
+ 	color:black;
+ 	text-decoration:none;
+ }
 
-.slider-nav a{
-    width:0.5rem;
-    height:0.5rem;
-    border-radius:50%;
-    background-color: black;
-    opacity: 0.75;
-    transition: opacity ease 250ms;
-}
+ .flex-text a:active {
+ 	color:black;
+     text-decoration: none;
+ }
 
-.slider-nav a:hover{
-    opacity: 1;
-}
-.menu{
-  margin:0.5vw;
-  margin-right:12px;
-  float: right;
-  display: inline-block;
-  cursor: pointer;
-}
+ .flex-text a:visited{
+ 	color:black;
+     text-decoration: none;
+ }
 
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s;
-}
+ .flex-text a:hover{
+     text-decoration: underline solid 2px black;
+     text-underline-offset: 2px;
+ }
 
-.change .bar1 {
-  transform: translate(0, 11px) rotate(-45deg);
-}
+ .flex-text > div{
+    width: 100%;
+     height: 200px;
+     margin 30px;
+     text-align:center;
+ }
 
-.change .bar2 {opacity: 0;}
+ .left-info{
 
-.change .bar3 {
-  transform: translate(0, -11px) rotate(45deg);
-}
+ background-color: #008C45;
+
+ }
+
+ .center-info{
+    background-color: #F4F9FF;
+
+ }
+
+ .right-info{
+    background-color: #CD212A;
+ }
+
+ /*Footer ends*/
+
+/*End of header and footer*/

@@ -1,0 +1,109 @@
+.container{
+    width:100vw;
+    margin: 0;
+    padding: 0;
+    display:grid;
+    grid-template-columns: 1fr 2.2fr;
+    grid-template-areas:
+    "topbar topbar topbar"
+    "content content content"
+    "footer footer footer"
+}
+
+.top{grid-area: topbar;}
+.content {grid-area: content}
+.footer{grid-area: footer}
+
+.footer , .content , .top{
+ margin-top: 20vh;
+
+}
+
+.window_first{
+    height: 30vh;
+    width: auto;
+    background-color: blue;
+}
+
+/*Start of windows*/
+.flex_text_content{
+     display:flex;
+     flex-direction:row;
+     align-items: center;
+     justify-content: center;
+     gap:30px;
+
+}
+
+.flex_text_content > div{
+    position:relative;
+    border: 3px solid gray;
+    height: 30vh;
+    width: 100%;
+
+    margin:0;
+
+}
+
+.flex_text_content > * > p{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    color: gray;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.flex_text_content > * > h3{
+
+    margin:0;
+    margin-left: 1vw;
+    padding:0;
+
+}
+
+.button_flex_text{
+    text-align:center;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    padding: 0.5rem;
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    text-decoration: none;
+    color: black;
+    border: 3px solid blue;
+}
+
+
+.green_shit{
+    background-color: green;
+    height: 4vh;
+    width: 1vw;
+    margin-top:1vh;
+    padding:0;
+}
+
+.pink_shit{
+    background-color: pink;
+    height: 4vh;
+    width: 1vw;
+    margin-top:1vh;
+    padding:0;
+
+}
+
+.green_shit,
+.green_shit + h3{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pink_shit,
+.pink_shit + h3{
+        display: inline-block;
+        vertical-align: middle;
+}
+
+
+/*End of windows*/
