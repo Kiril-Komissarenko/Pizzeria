@@ -1,0 +1,20 @@
+.container{
+    width:100vw;
+    margin: 0;
+    padding: 0;
+    display:grid;
+
+    grid-template-areas:
+    "topbar topbar topbar"
+    "content content content"
+    "footer footer footer"
+}
+
+.header{grid-area: topbar;}
+.content {grid-area: content}
+.footer{grid-area: footer}
+
+.footer{
+ margin-top: 20vh;
+
+}

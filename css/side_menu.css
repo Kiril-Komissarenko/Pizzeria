@@ -1,0 +1,49 @@
+/*Side menu code start*/
+.side_menu{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-family: sans-serif;
+}
+.menu{
+    margin-right: 5vw;
+}
+
+
+.vertical-line {
+  width: 2px;
+  height: 100%;
+  background-color: #000;
+  float:right;
+}
+
+#side_menu_header{
+    font-size:2vw; /*30px*/
+    padding:0;
+    margin:0;
+    text-align:center;
+}
+
+.nav_element{
+    display:block;
+    text-align:center; !important
+    text-decoration:none;
+    font-size: 1vw;
+    color: black;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+    font-weight: 900;
+}
+
+.nav_element:hover{
+    text-decoration: underline 2px solid green;
+}
+
+.nav_element:active{
+    text-decoration:none;
+    background-color: brown;
+    color:white;
+    border-radius: 0.5rem;
+
+
+}
+/*Side menu code ends*/
