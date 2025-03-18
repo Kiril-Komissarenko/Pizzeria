@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project-K Pizzeria</title>
+    <link rel = "stylesheet" href = "../css/common.css">
+    <link rel = "stylesheet" href = "../css/home.css">
+    <link rel = "stylesheet" href = "../css/special_deal_page.css">
+</head>
+
+<body>
+<div class = "container_main">
+
+    <div class = "header">
+
+        <div class = "top-header">
+            <a href = "home_page.html">
+                <img src = "../img/logo.jpg" alt = "ERROR LOGO IS NOT LOADING" class = "logo"  height = "50px" width = "50px">
+            </a>
+            <div class = "menu" onclick = "menuFunction(this)">
+                <div class = "bar1"></div>
+                <div class = "bar2"></div>
+                <div class = "bar3"></div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class = "header_buttons">
+            <a href = "menu_page.html"> MENU </a>
+            <a href = "special_deal_page.html"> COUPONS</a>
+            <a href = "rewards_page.html"> REWARDS </a>
+            <form class = "promocode">
+                <input type = "text" id="promo" name = "promo" placeholder = "Enter a promo code"><input type = "submit"  id= "promo_button" value ="Apply">
+            </form>
+        </div>
+        <div class = "header_hide">
+            <h2>Side Menu</h2>
+            <div>
+                <a href = "https://www.instagram.com/__k.i.r.i_l_l__/"><img src = "../img/inst.png" alt = "inst" width = "100px" id = "inst" ></a>
+                <a href = "https://www.instagram.com/__k.i.r.i_l_l__/"> Instagram</a>
+            </div>
+        </div>
+    </div>
+
+    <div class = "content">
+        <div class = "box_container">
+            <div class = "box">
+                <img src = "../img/canadian.jpeg" alt = "canadian">
+
+                <h3>Special Deal</h3>
+                <div class="countdown"></div>
+                <p>COUPON: 25CAD</p>
+                <p>Large Canadian Pizza For 10$</p>
+
+            </div>
+            <div class = "box">
+                <img src = "../img/chicken_bacon_alfredo.jpeg" alt = "chicken bacon alfredo pizza">
+                <h3>Special Deal</h3>
+                <div class="countdown"></div>
+                <p>COUPON: 20CAD</p>
+                <p>Large Chicken Bacon Alfredo For 10$</p>
+            </div>
+
+            <div class = "box">
+                <img src = "../img/hawaiian.jpeg" alt = "hawaiian pizza">
+                <h3>Special Deal</h3>
+                <div class="countdown"></div>
+                <p>COUPON: 15CAD</p>
+                <p>Large Hawaiian For 10$</p>
+            </div>
+
+            <div class = "box">
+                <img src = "../img/meatzza.jpeg" alt = "meatzza pizza">
+                <h3>Special Deal</h3>
+                <div class="countdown"></div>
+                <p>COUPON: 10CAD</p>
+                <p>Large Meatzza Pizza For 10$</p>
+            </div>
+        </div>
+    </div>
+    <div class = "footer">
+        <hr>
+
+        <div class = "flex-text">
+            <div class="left-info">
+                <h4>Our Company</h4>
+                <a href = "about_company_html/about_company_about_us.html ">About Company</a>
+            </div>
+
+            <div class="center-info">
+                <h4>Franchise</h4>
+                <a href = "about_franchises_html/about_franchises_why_us.html">About Franchises</a>
+                <div id="lastModified"></div>
+            </div>
+
+            <div class="right-info">
+                <h4>Help</h4>
+                <a href = "contact_us.html "> Contact Us</a><br>
+                <a href = "common_question.html "> Common Questions</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+    <script>function menuFunction(x) {
+          x.classList.toggle("change");
+          document.querySelector(".header_hide").classList.toggle("active");
+        }</script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const lastModified = document.lastModified;
+        document.getElementById('lastModified').textContent = `Last Modified: ${lastModified}`;
+    });
+</script>
+
+    <script>
+    function startCountdown() {
+      const targetTime = Date.now() + 24 * 60 * 60 * 1000;
+      const interval = setInterval(function() {
+
+        const now = Date.now();
+        const remainingTime = targetTime - now;
+
+
+        if (remainingTime <= 0) {
+          clearInterval(interval);
+          const countdownElements = document.getElementsByClassName("countdown");
+
+          for (let i = 0; i < countdownElements.length; i++) {
+            countdownElements[i].innerHTML = "Countdown Finished!";
+          }
+          setTimeout(startCountdown, 1000); // Restart the countdown after 1 second
+          return;
+        }
+
+        const hours = Math.floor((remainingTime / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((remainingTime / (1000 * 60)) % 60);
+        const seconds = Math.floor((remainingTime / 1000) % 60);
+
+        const countdownElements = document.getElementsByClassName("countdown");
+        for (let i = 0; i < countdownElements.length; i++) {
+          countdownElements[i].innerHTML = `${hours}h ${minutes}m ${seconds}s`;
+        }
+
+      }, 1000);
+    }
+    startCountdown();
+</script>
+</body>
+</html>

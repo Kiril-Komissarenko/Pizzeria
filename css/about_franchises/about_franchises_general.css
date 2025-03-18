@@ -1,0 +1,72 @@
+.container{
+    width:100vw;
+    margin: 0;
+    padding: 0;
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 2.2fr;
+    grid-template-areas:
+    "topbar topbar topbar"
+    "side_menu content content"
+    "footer footer footer"
+
+
+}
+
+.header{grid-area: topbar;}
+.side_menu {grid-area: side_menu;}
+.content {grid-area: content;}
+.footer{grid-area: footer;}
+
+
+.side_menu, .content {
+    margin-top:20vh;
+}
+
+.about_franchises {
+    background-color: #E0E0E0;
+
+    margin-right: 10vw;
+    font-family: sans-serif;
+    border-radius:0.5rem;
+}
+.about_franchises p{
+    color:grey;
+    font-weight:500;
+    padding-bottom: 15px;
+    margin: 10px;
+    letter-spacing: 0.5px;
+
+}
+.about_franchises h3{
+    margin: 10px;
+    margin-top:0;
+    margin-bottom:0;
+
+    padding:0;
+    font-size:30px;
+}
+
+#header_content{
+    padding-top:3vh;
+    margin-top:3vh;
+}
+
+#apply_button{
+    position: absolute;
+    background-color: brown;
+    border-radius: 0.5rem;
+    border-color: black;
+    left: 50%;
+}
+
+
+/*Content part of the code ends*/
+
+/*Footer part of the code starts*/
+
+.footer{
+    margin-top: 3vh;
+}
+
+/*Footer part of the code ends*/

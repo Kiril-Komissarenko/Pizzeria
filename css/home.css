@@ -154,7 +154,11 @@ margin-top:20px;
 }
 
 #pictures_content_first img:nth-child(2){
-    flex:grow: 1;
-    width: 100%;
-    object
+    flex: 1 1 auto;
 }
+
+#picture_menu_1{
+    max-width: 35rem;
+    height:auto;
+}
+

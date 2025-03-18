@@ -1,0 +1,13 @@
+#about_us_href{
+    text-decoration:none;
+    background-color: brown;
+    color:white;
+    border-radius: 0.5rem;
+}
+#pic1{
+    aspect-ratio: 20/ 9;
+    border-top-left-radius:0.5rem;
+    border-top-right-radius:0.5rem;
+    width:100%;
+    height:auto;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel = "stylesheet" href = "../../css/common.css">
+  <link rel = "stylesheet" href = "../../css/about_company_css/about_company_general.css">
+  <link rel = "stylesheet" href = "../../css/side_menu.css">
+  <link rel = "stylesheet" href = "../../css/about_company_css/about_company_nutritional_info.css">
+</head>
+<body>
+<div class = "container">
+
+  <div class = "header">
+
+    <div class = "top-header">
+      <a href = "../home_page.html">
+        <img src = "../../img/logo.jpg" alt = "ERROR LOGO IS NOT LOADING" class = "logo"  height = "50px" width = "50px">
+      </a>
+      <div class = "menu" onclick = "menuFunction(this)">
+        <div class = "bar1"></div>
+        <div class = "bar2"></div>
+        <div class = "bar3"></div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class = "header_buttons">
+      <a href = "../menu_page.html"> MENU </a>
+      <a href = "../special_deal_page.html"> COUPONS</a>
+      <a href = "../rewards_page.html"> REWARDS </a>
+      <form class = "promocode">
+        <input type = "text" id="promo" name = "promo" placeholder = "Enter a promo code"><input type = "submit"  id= "promo_button" value ="Apply">
+      </form>
+    </div>
+    <div class = "header_hide">
+      <h2>Side Menu</h2>
+      <div>
+        <a href = "https://www.instagram.com/__k.i.r.i_l_l__/"><img src = "../../img/inst.png" alt = "inst" width = "100px" id = "inst" ></a>
+        <a href = "https://www.instagram.com/__k.i.r.i_l_l__/"> Instagram</a>
+      </div>
+    </div>
+  </div>
+
+  <div class = "side_menu">
+    <div class="vertical-line"></div>
+    <div class = "menu_side_bar">
+      <h3 id ="side_menu_header">About K-Project</h3>
+      <hr>
+      <div class = "navigation-window">
+        <a href = "about_company_about_us.html" class = "nav_element" id = "about_us_href">About Us</a>
+        <hr>
+        <a href = "about_company_our_pizza.html" class = "nav_element" id = "our_pizza_href">Our Pizza</a>
+        <hr>
+        <a href = "about_company_quality_guarantee.html" class = "nav_element" id = "quality_guarantee_href">Quality Guarantee</a>
+        <hr>
+        <a href = "about_company_nutritional_info.html" class = "nav_element" id = "nutritional_info_href">Nutritional Info</a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class = "content">
+    <div class="about_us" id = "about_us_info" >
+
+      <h3 class = "header_content">Nutritional Information</h3>
+      <h3 class = "header_content" id = "second">Building Foundation of Quality</h3>
+      <h4 id = "rainbow_text"> Unravel the secrets behind our mystical pizza and let the nutritional magic of Project-K empower your next epic battle!</h4>
+
+      <img src = "../../img/one.png" alt = "Error" width ="20vw" height ="20vh" class = "img_number">
+      <h4  class = "text_number">Nutritional Secrets: The Potion of Power</h4>
+      <p>
+        Greetings, fearless flavor explorer!
+        Step into the hidden chamber of nutritional enlightenment at K-Pizzeria,
+        where every slice is a spellbinding blend of science and sorcery.
+      </p>
+
+      <img src = "../../img/two.png" alt = "Error" width ="20vw" height ="20vh" class = "img_number">
+      <h4  class = "text_number">The Arcane Balance of Macros</h4>
+      <p>Our legendary pies are crafted with precision by culinary alchemists.
+        Each slice boasts a mystical balance of calories, proteins, fats,
+        and carbohydrates—ensuring your energy is perfectly attuned for any adventure that awaits.
+      </p>
+
+      <img src = "../../img/three.png" alt = "Error" width ="20vw" height ="20vh" class = "img_number">
+      <h4  class = "text_number">Micro-Miracles at Work</h4>
+      <p>
+        Within every enchanted ingredient lie potent micronutrients—vitamins, minerals,
+        and trace elements that might just be conjured by magical forces.
+        These tiny dynamos work quietly behind the scenes,
+        fueling your inner strength and turning every bite into a burst of nutritional power.
+      </p>
+
+      <img src = "../../img/four.png" alt = "Error" width ="20vw" height ="20vh" class = "img_number">
+      <h4  class = "text_number">Transparent Magic for the Modern Mage</h4>
+      <p>Even though our recipes are shrouded in mystery, we believe in clear, honest revelations when it comes to your health.
+        Our detailed nutritional charts are your grimoire of knowledge,
+        revealing the science behind each magical ingredient without compromising our legendary charm.
+      </p>
+
+    </div>
+  </div>
+
+  <div class = "footer">
+    <hr>
+
+    <div class = "flex-text">
+      <div class="left-info">
+        <h4>Our Company</h4>
+        <a href = "../about_company_html/about_company_about_us.html ">About Company</a>
+      </div>
+
+      <div class="center-info">
+        <h4>Franchise</h4>
+        <a href = "../about_franchises_html/about_franchises_why_us.html">About Franchises</a>
+        <div id="lastModified"></div>
+      </div>
+
+      <div class="right-info">
+        <h4>Help</h4>
+        <a href = "../contact_us.html "> Contact Us</a><br>
+        <a href = "../common_question.html "> Common Questions</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+<script>function menuFunction(x) {
+          x.classList.toggle("change");
+          document.querySelector(".header_hide").classList.toggle("active");
+        }</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      const lastModified = document.lastModified;
+      document.getElementById('lastModified').textContent = `Last Modified: ${lastModified}`;
+  });
+</script>
+</body>
+</html>

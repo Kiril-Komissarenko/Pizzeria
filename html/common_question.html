@@ -32,24 +32,87 @@
                     <input type = "text" id="promo" name = "promo" placeholder = "Enter a promo code"><input type = "submit"  id= "promo_button" value ="Apply">
                 </form>
             </div>
-
+            <div class = "header_hide">
+                <h2>Side Menu</h2>
+                <div>
+                    <a href = "https://www.instagram.com/__k.i.r.i_l_l__/"><img src = "../img/inst.png" alt = "inst" width = "100px" id = "inst" ></a>
+                    <a href = "https://www.instagram.com/__k.i.r.i_l_l__/"> Instagram</a>
+                </div>
+            </div>
         </div>
 
+        <div class = "content">
+            <div class="menu-item">
+                <button class="menu-button">Do you have vegetarian or vegan pizzas?</button>
+                <div class="menu-content">
+                    <p>Yes! We have a variety of vegetarian and vegan-friendly pizzas.
+                        Try our Vegan Margherita or build your own with plant-based cheese and fresh veggies.</p>
+                </div>
+            </div>
 
+            <div class="menu-item">
+                <button class="menu-button">Do you cater for parties and events?</button>
+                <div class="menu-content">
+                    <p>Of course! We offer catering services for birthdays, office parties, and special occasions.
+                        Contact us for more details.
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <button class="menu-button">Do you have any special deals or discounts?</button>
+                <div class="menu-content">
+                    <p>Yes! Check our website or social media for weekly deals, happy hour discounts, and combo offers.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <button class="menu-button">What payment methods do you accept?</button>
+                <div class="menu-content">
+                    <p>We accept cash, credit/debit cards, Apple Pay, and Google Pay.
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <button class="menu-button">Do you have nutritional information available?</button>
+                <div class = "menu-content">
+                    <p>Yes! We provide nutritional details for all menu
+                        items on our website or at our restaurant upon request.
+                    </p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <button class="menu-button">What if I have food allergies?</button>
+                <div class="menu-content">
+                    <p>Please inform our staff about any allergies when ordering.
+                        We’ll happily accommodate special dietary requirements to ensure your safety.
+                    </p>
+                </div>
+            </div>
+            </div>
+
+
+
+
+        </div>
 
         <div class = "footer">
             <hr>
 
             <div class = "flex-text">
-
                 <div class="left-info">
                     <h4>Our Company</h4>
-                    <a href = "about_company.html ">About Company</a>
+                    <a href = "about_company_html/about_company_about_us.html ">About Company</a>
                 </div>
 
                 <div class="center-info">
                     <h4>Franchise</h4>
-                    <a href = "about_franchises.html">About Franchises</a>
+                    <a href = "about_franchises_html/about_franchises_why_us.html">About Franchises</a>
+                    <div id="lastModified"></div>
                 </div>
 
                 <div class="right-info">
@@ -63,5 +126,25 @@
         </div>
 
     </div>
+    <script>function menuFunction(x) {
+          x.classList.toggle("change");
+          document.querySelector(".header_hide").classList.toggle("active");
+        }</script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const lastModified = document.lastModified;
+            document.getElementById('lastModified').textContent = `Last Modified: ${lastModified}`;
+        });
+    </script>
+
+    <script>
+        document.querySelectorAll('.menu-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                content.classList.toggle('open');
+            });
+        });
+        </script>
 </body>
 </html>

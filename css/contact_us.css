@@ -14,16 +14,14 @@
 .content {grid-area: content}
 .footer{grid-area: footer}
 
-.footer , .content , .top{
- margin-top: 20vh;
+.content {
+ padding-top: 30vh;
 
 }
-
-.window_first{
-    height: 30vh;
-    width: auto;
-    background-color: blue;
+.footer{
+    padding-top: 20vh;
 }
+
 
 /*Start of windows*/
 .flex_text_content{
@@ -37,10 +35,11 @@
 
 .flex_text_content > div{
     position:relative;
-    border: 3px solid gray;
+    border: 3px solid black;
     height: 30vh;
     width: 100%;
-
+    border-radius: 1rem;
+    background-color: #008C45;
     margin:0;
 
 }
@@ -48,7 +47,7 @@
 .flex_text_content > * > p{
     margin-left: 1vw;
     margin-right: 1vw;
-    color: gray;
+    color: black;
     font-family: sans-serif;
     text-align: center;
 }
@@ -72,38 +71,19 @@
     transform:translateX(-50%);
     text-decoration: none;
     color: black;
-    border: 3px solid blue;
+    background-color: blue;
+    border-radius: 1rem;
+    font-weight: 900;
+    font-size: 1rem;
+    font-family: sans-serif;
+    border: none;
 }
 
 
-.green_shit{
-    background-color: green;
-    height: 4vh;
-    width: 1vw;
-    margin-top:1vh;
-    padding:0;
-}
 
-.pink_shit{
-    background-color: pink;
-    height: 4vh;
-    width: 1vw;
-    margin-top:1vh;
-    padding:0;
 
-}
 
-.green_shit,
-.green_shit + h3{
-    display: inline-block;
-    vertical-align: middle;
-}
 
-.pink_shit,
-.pink_shit + h3{
-        display: inline-block;
-        vertical-align: middle;
-}
 
 
 /*End of windows*/

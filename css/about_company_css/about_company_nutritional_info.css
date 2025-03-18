@@ -1,0 +1,72 @@
+#nutritional_info_href{
+        text-decoration:none;
+        background-color: brown;
+        color:white;
+        border-radius: 0.5rem;
+}
+.img_number{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1vw;
+}
+
+.about_us{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right 1rem;
+
+}
+
+p{
+    padding-left: 3rem;
+}
+#second{
+    font-size:1.25rem;
+}
+h3{
+    margin-left:2rem;
+}
+h4{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    color:black;
+    text-align:center;
+}
+.text_number{
+    margin-left: 0;
+    color:black;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@keyframes rainbow-animation {
+  from {
+    background-position: 0 50%;
+  }
+  to {
+    background-position: 350px 50%;
+  }
+}
+
+#rainbow_text{
+  font-size: 1.25rem;
+  -webkit-text-stroke: 1px black;
+  background: repeating-linear-gradient(
+    90deg,
+    red 0px, red 50px,
+    orange 50px, orange 100px,
+    yellow 100px, yellow 150px,
+    green 150px, green 200px,
+    blue 200px, blue 250px,
+    indigo 250px, indigo 300px,
+    violet 300px, violet 350px
+  );
+
+  background-size: 350px 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  animation: rainbow-animation 10s linear infinite;
+}

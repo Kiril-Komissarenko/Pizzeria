@@ -1,9 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <link rel = "stylesheet" href = "../css/common.css">
+        <link rel = "stylesheet" href = "../css/menu.css">
     </head>
 
     <body>
-        DDD
+        <div class = "container_main">
+            <div class = "header">
+
+                <div class = "top-header">
+                    <a href = "home_page.html">
+                        <img src = "../img/logo.jpg" alt = "ERROR LOGO IS NOT LOADING" class = "logo"  height = "50px" width = "50px">
+                    </a>
+                    <div class = "menu" onclick = "menuFunction(this)">
+                        <div class = "bar1"></div>
+                        <div class = "bar2"></div>
+                        <div class = "bar3"></div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class = "header_buttons">
+                    <a href = "menu_page.html"> MENU </a>
+                    <a href = "special_deal_page.html"> COUPONS</a>
+                    <a href = "rewards_page.html"> REWARDS </a>
+                    <form class = "promocode">
+                        <input type = "text" id="promo" name = "promo" placeholder = "Enter a promo code"><input type = "submit"  id= "promo_button" value ="Apply">
+                    </form>
+                </div>
+                <div class = "header_hide">
+                    <h2>Side Menu</h2>
+                    <div>
+                        <a href = "https://www.instagram.com/__k.i.r.i_l_l__/"><img src = "../img/inst.png" alt = "inst" width = "100px" id = "inst" ></a>
+                        <a href = "https://www.instagram.com/__k.i.r.i_l_l__/"> Instagram</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "pizza_menu">
+                <div class = "pizza_elements">
+                    <div class = "element">
+                        <img src="../img/peperoni.jpeg" alt = "Error" class = "picture">
+                        <button onclick = "showAlert()">Order Now</button>
+                        <h3>Peperoni</h3>
+                        <p>Lots and lots of pepperoni topped with an extra layer of cheese.</p>
+                    </div>
+
+                    <div class = "element">
+                        <img src = "../img/hawaiian.jpeg" alt = "Error" class = "picture">
+                        <button onclick = "showAlert()">Order Now</button>
+                        <h3>Hawaiian</h3>
+                        <p>Succulent pineapple and slices of ham topped with an extra layer of cheese.</p>
+                    </div>
+
+                    <div class = "element">
+                        <img src = "../img/meatzza.jpeg" alt = "Error" class = "picture">
+                        <button onclick = "showAlert()">Order Now</button>
+                        <h3>MeatZZa</h3>
+                        <p>Slice after slice of pepperoni, ham,
+                            savory Italian sausage and beef crumble topped with an extra layer of cheese.</p>
+                    </div>
+
+                    <div class = "element">
+                        <img src = "../img/vegie.jpeg" alt ="Error" class = "picture">
+                        <button onclick = "showAlert()">Order Now</button>
+                        <h3>Veggie</h3>
+                        <p>A medley of fresh green peppers, onion, tomatoes, mushrooms, and olives.</p>
+                    </div>
+                </div>
+                <div class = "pizza_elements">
+                    <div class = "element">
+                        <img src = "../img/canadian.jpeg" alt = "Error" class = "picture">
+                        <button onclick = "showAlert()">Order Now</button>
+                        <h3>Canadian</h3>
+                        <p>Loads of pepperoni, fresh mushrooms, and smoked bacon,
+                            topped with an extra layer of premium mozzarella cheese.</p>
+                    </div>
+
+                    <div class = "element">
+                        <img src = "../img/butter_chicken_pizza.jpeg" alt = "Error" class ="picture">
+                        <button onclick = "showAlert()">Order Now</button>
+                        <h3>Butter Chicken Pizza</h3>
+                        <p>Smothered in flavourful butter chicken sauce and loaded with all white-meat chicken,
+                            fresh onions, sliced tomatoes, and a mozzarella/cheddar cheese blend.</p>
+                    </div>
+
+                    <div class = "element">
+                        <img src = "../img/6cheese.jpeg" alt = "Error" class = "picture">
+                        <div class = "order"><button onclick = "showAlert()">Order Now</button></div>
+                        <h3>6 Cheese</h3>
+                        <p>Covered with Feta, provolone, cheddar, Parmesan-Asiago,
+                            and mozzarella cheese finished with a sprinkle of oregano.</p>
+                    </div>
+
+                    <div class = "element">
+                        <img src = "../img/chicken_bacon_alfredo.jpeg" alt = "Error" class = "picture">
+                        <button onclick = "showAlert()">Order Now</button>
+                        <h3>Chicken Bacon Alfredo</h3>
+                        <p>An Alfredo Sauce base with a Mozzarella/Cheddar Cheese blend,
+                            fresh mushrooms, onions, all white-meat chicken, bacon and Provolone cheese.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "footer">
+                <hr>
+
+                <div class = "flex-text">
+                    <div class="left-info">
+                        <h4>Our Company</h4>
+                        <a href = "about_company_html/about_company_about_us.html ">About Company</a>
+                    </div>
+
+                    <div class="center-info">
+                        <h4>Franchise</h4>
+                        <a href = "about_franchises_html/about_franchises_why_us.html">About Franchises</a>
+                        <div id="lastModified"></div>
+                    </div>
+
+                    <div class="right-info">
+                        <h4>Help</h4>
+                        <a href = "contact_us.html "> Contact Us</a><br>
+                        <a href = "common_question.html "> Common Questions</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <script>function menuFunction(x) {
+          x.classList.toggle("change");
+          document.querySelector(".header_hide").classList.toggle("active");
+        }</script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const lastModified = document.lastModified;
+                document.getElementById('lastModified').textContent = `Last Modified: ${lastModified}`;
+            });
+        </script>
     </body>
 </html>

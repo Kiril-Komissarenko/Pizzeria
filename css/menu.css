@@ -1,0 +1,74 @@
+.container{
+    width:100vw;
+    margin: 0;
+    padding: 0;
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 2.2fr;
+    grid-template-areas:
+    "topbar topbar topbar"
+    "content content content"
+    "footer footer footer"
+}
+
+.header{grid-area: topbar;}
+.content {grid-area: pizza_menu;}
+.footer{grid-area: footer;}
+
+ .pizza_menu{
+   padding-top: 20rem;
+   padding-bottom: 10rem;
+}
+
+.pizza_menu{
+    box-shadow: none;
+    text-shadow: none;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.pizza_elements {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+  padding-top: 3vh;
+  margin-bottom: 2rem;
+}
+
+
+.element {
+  background-color: #E0E0E0;
+  border-radius: 0.5rem;
+  width: 200px;
+
+  margin: 0;
+
+}
+
+.picture{
+    width: 100% ;
+    height: auto;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+button{
+    background-color: rgb(0, 140, 69);
+    padding: 0.5rem 0 0.5rem 0;
+    border:none;
+    color:black;
+    margin-top: 1rem;
+    width:100%;
+
+}
+
+button:hover{
+    font-weight: bold;
+}
+
+button:active{
+    background-color: darkgreen;
+}
+
+p{
+    text-align:center;
+}

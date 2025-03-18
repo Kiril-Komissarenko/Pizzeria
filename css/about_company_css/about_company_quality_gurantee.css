@@ -1,0 +1,27 @@
+#quality_guarantee_href{
+        text-decoration:none;
+        background-color: brown;
+        color:white;
+        border-radius: 0.5rem;
+}
+.footer{
+    margin-top:20vh;
+}
+.about_us{
+
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+
+}
+
+.align{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#quality{
+    padding-top:1rem;
+    padding-right: 1rem;
+}

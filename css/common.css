@@ -10,7 +10,44 @@ html, body {
  /*basic end*/
 
  /*Header*/
+ .header_hide h2{
+    font-family: sans-serif;
+    text-align: center;
+ }
+.header_hide div{
+    display: flex;
+    align-items: center;
+}
+.header_hide a{
+    padding-left: 2px;
+    text-decoration:none;
+    font-weight:bold;
+    font-family: sans-serif;
+}
 
+.header_hide{
+                height: 100%;
+                width: 0;
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: #E0E0E0;
+                border: 2px solid black;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 0;
+                display: flex;
+                flex-direction: column;
+}
+
+.header_hide.active {
+    width: 250px;
+}
+
+#inst{
+    width: 50px;
+    float: left;
+}
  .header{
      background-color: white;
      z-index: 1;
@@ -107,7 +144,6 @@ html, body {
 
  .menu{
    margin:0.5vw;
-   margin-right:12px;
    float: right;
    display: inline-block;
    cursor: pointer;
@@ -157,6 +193,7 @@ html, body {
  flex-direction:row;
  align-items: center;
  justify-content: center;
+
  }
 
  .flex-text a{
@@ -206,6 +243,13 @@ html, body {
  .right-info{
     background-color: #CD212A;
  }
+#lastModified {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #bbb;
+
+}
+
 
  /*Footer ends*/
 

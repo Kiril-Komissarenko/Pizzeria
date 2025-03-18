@@ -1,0 +1,42 @@
+.container{
+    width:100vw;
+    margin: 0;
+    padding: 0;
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 2.2fr;
+    grid-template-areas:
+    "topbar topbar topbar"
+    "content content content"
+    "footer footer footer"
+}
+
+.header {grid-area: topbar;}
+.content {grid-area: content}
+.footer {grid-area: footer}
+
+.content{
+    padding-top: 14rem;
+}
+#how_it_works{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+}
+#box_rewards{
+
+
+    margin:10%;
+    background-color: #E0E0E0;
+    border-radius: 1rem;
+}
+
+#points{
+
+}
+#points img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+}

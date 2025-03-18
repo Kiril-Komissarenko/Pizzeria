@@ -1,0 +1,30 @@
+#our_pizza_href{
+    text-decoration:none;
+    background-color: brown;
+    color:white;
+    border-radius: 0.5rem;
+}
+
+.about_us{
+    padding-top:0;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+
+}
+
+.align{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#second{
+    font-size:1.25rem;
+}
+
+#pizza{
+    height:10rem;
+    width: 10rem;
+
+}

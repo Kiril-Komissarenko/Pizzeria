@@ -14,7 +14,47 @@
 .content {grid-area: content}
 .footer{grid-area: footer}
 
-.footer{
+.content{
  margin-top: 20vh;
 
+}
+.footer{
+    margin-top: 20vh;
+}
+.menu-item {
+    margin-bottom: 10px;
+}
+
+.menu-button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: sans-serif;
+    width: 100%;
+        }
+
+.menu-button:hover {
+    background-color: #229954;
+}
+
+.menu-content {
+    font-family: sans-serif;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    color: #333;
+    padding: 0 20px;
+    margin: 5px auto;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+
+.menu-content.open {
+    max-height: 20rem;
+    padding: 10px 20px;
 }

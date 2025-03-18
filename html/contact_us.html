@@ -33,15 +33,16 @@
                     <input type = "text" id="promo" name = "promo" placeholder = "Enter a promo code"><input type = "submit"  id= "promo_button" value ="Apply">
                 </form>
             </div>
-
-        </div>
-
-        <div class = "top">
-            <div class = "window_first">
-
-
+            <div class = "header_hide">
+                <h2>Side Menu</h2>
+                <div>
+                    <a href = "https://www.instagram.com/__k.i.r.i_l_l__/"><img src = "../img/inst.png" alt = "inst" width = "100px" id = "inst" ></a>
+                    <a href = "https://www.instagram.com/__k.i.r.i_l_l__/"> Instagram</a>
+                </div>
             </div>
         </div>
+
+
 
         <div class = "content">
 
@@ -55,7 +56,7 @@
                         Want to find out more?
                         Get in touch, we promise not to tell anyone (maybe).</p>
 
-                    <a href = "" class = "button_flex_text">Get in touch</a>
+                    <button onclick="alert('Email: sales@project_k.com | Phone: +1 236 565 9553')" class = "button_flex_text">Get in touch</button>
                 </div>
 
                 <div class = "support">
@@ -65,7 +66,7 @@
                     <p>Pizza problem? Missing cheese or ghost toppings?
                         Our pizza detectives are ready to help you day and night!
                         Contact us and we'll rescue your pizza before it’s too late!</p>
-                    <a href = "" class = "button_flex_text">Get in touch</a>
+                    <button onclick="alert('Email: support@project_k.com | Phone: +1 236 565 9553')" class = "button_flex_text">Get in touch</button >
                 </div>
 
                 <div class = "media">
@@ -76,7 +77,7 @@
                         Want to show the world our tasty pizza mysteries?
                         We love the camera (and pizza, of course)!
                         Reach out and let's create delicious stories together.</p>
-                    <a href = "" class = "button_flex_text">Get in touch</a>
+                    <button onclick="alert('Email: media@project_k.com | Phone: +1 236 565 9553')" class = "button_flex_text">Get in touch</button>
                 </div>
 
                 <div class = "partnership">
@@ -87,7 +88,7 @@
                         We’re looking for special partners who understand pizza magic!
                         Send us a message. Our pizza elves will answer soon!</p>
 
-                    <a href = "" class = "button_flex_text">Get in touch</a>
+                    <button onclick="alert('Email: partners@project_k.com| Phone: +1 236 565 9553')"  class = "button_flex_text">Get in touch</button>
 
                 </div>
 
@@ -99,15 +100,15 @@
             <hr>
 
             <div class = "flex-text">
-
                 <div class="left-info">
                     <h4>Our Company</h4>
-                    <a href = "about_company.html ">About Company</a>
+                    <a href = "about_company_html/about_company_about_us.html ">About Company</a>
                 </div>
 
                 <div class="center-info">
                     <h4>Franchise</h4>
-                    <a href = "about_franchises.html">About Franchises</a>
+                    <a href = "about_franchises_html/about_franchises_why_us.html">About Franchises</a>
+                    <div id="lastModified"></div>
                 </div>
 
                 <div class="right-info">
@@ -121,5 +122,16 @@
         </div>
 
     </div>
+    <script>function menuFunction(x) {
+          x.classList.toggle("change");
+          document.querySelector(".header_hide").classList.toggle("active");
+        }</script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const lastModified = document.lastModified;
+            document.getElementById('lastModified').textContent = `Last Modified: ${lastModified}`;
+        });
+    </script>
 </body>
 </html>

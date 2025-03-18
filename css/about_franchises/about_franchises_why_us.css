@@ -1,0 +1,10 @@
+#why_us_href{
+    text-decoration:none;
+    background-color: brown;
+    color:white;
+    border-radius: 0.5rem;
+}
+
+.footer{
+    margin-top:20vh;
+}
